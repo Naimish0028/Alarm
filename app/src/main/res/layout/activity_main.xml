@@ -18,7 +18,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <!-- Changed height from match_parent to wrap_content for correct scrolling -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -109,7 +108,7 @@
 
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- 2nd Material card view (Fixed constraints and removed 500dp margin) -->
+            <!-- 2nd Material card view -->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/Materalcard2"
                 android:layout_width="match_parent"
@@ -148,7 +147,6 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/clock_cancel" />
 
-                    <!-- Fixed: Removed format12Hour from TextView since it is not a TextClock -->
                     <TextView
                         android:id="@+id/textView6"
                         android:layout_width="wrap_content"
