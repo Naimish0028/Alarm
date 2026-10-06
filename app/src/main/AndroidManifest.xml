@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Added: Universal permission for scheduling exact alarms on Android 12+ -->
     <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
 
     <application
@@ -29,7 +28,7 @@
         <service
             android:name=".AlarmService"
             android:enabled="true"
-            android:exported="false" /> <!-- Changed to false for better app security -->
+            android:exported="false" /> <!-- Changed to false for better app security-->
 
         <!-- Fixed: Spelled "AlarmBroadcastReceiver" correctly to match your Kotlin files -->
         <receiver
